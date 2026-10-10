@@ -1,6 +1,6 @@
 project(shm_demo CXX)
 
-file(GLOB COMMON common/*.cpp)
+file(GLOB COMMON src/*.cpp)
 
 add_executable(shm_producer shm_producer.cpp ${COMMON})
 add_executable(shm_consumer shm_consumer.cpp ${COMMON})

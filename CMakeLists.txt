@@ -11,9 +11,7 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
 endif()
 
-include_directories(${PROJECT_SOURCE_DIR}/include)
-
 add_compile_options(-Wall -Wextra -Wpedantic)
 
-add_subdirectory(src/shm_demo)
+add_subdirectory(shm_demo)
 # add_subdirectory(src/rpc)
