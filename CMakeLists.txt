@@ -14,4 +14,4 @@ endif()
 add_compile_options(-Wall -Wextra -Wpedantic)
 
 add_subdirectory(shm_demo)
-# add_subdirectory(src/rpc)
+add_subdirectory(rpc_demo)
