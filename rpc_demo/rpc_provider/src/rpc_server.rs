@@ -19,6 +19,7 @@ impl RpcDemo for RpcDemoImpl {
         request: Request<GreetingRequest>,
     ) -> Result<Response<GreetingResponse>, Status> {
         let GreetingRequest { name } = request.into_inner();
+        log::debug!("Receive request from {name}");
 
         let resp = GreetingResponse {
             message: format!("Hello {name}! This is Rust RPC provider!"),
